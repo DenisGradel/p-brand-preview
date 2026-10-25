@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Оформление статьи · выделения и вставки</title>
+<title>Оформление статьи · списки и выводы</title>
 <style id="font-assets">@font-face {
   font-family: 'Open Sans';
   font-style: italic;
@@ -120,15 +120,72 @@ body[data-view=reading] .inline-context{display:block}
 @media(max-width:999px){.inline-grid{grid-template-columns:1fr;max-width:716px;margin:auto;gap:40px}.inline-study{margin-bottom:56px}.inline-study>h2,.previous-title{font-size:22px;line-height:30px}}
 @media(max-width:767px){.inline-context .thesis{padding:20px}.inline-context .thesis p{font-size:17px;line-height:28px}}
 </style>
+<style id="list-study-styles">
+/* Lists share the selected article type and flat editorial system. */
+.list-study{margin:0 0 72px;padding:0 0 56px;border-bottom:1px solid var(--rule);scroll-margin-top:24px}
+.list-study>h2{font:800 24px/32px "Open Sans",Arial,sans-serif;letter-spacing:1.2px;margin:0 0 12px;text-wrap:balance}
+.list-intro{font-size:14px;line-height:24px;max-width:840px;margin:0 0 32px}
+.lists-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.list-option{min-width:0}
+.list-option>h3{font:800 19px/28px "Open Sans",Arial,sans-serif;letter-spacing:.7px;margin:0 0 8px}
+.list-option .description{margin-bottom:24px}
+.list-source-label{font:700 13px/22px "Open Sans",Arial,sans-serif;letter-spacing:0;margin:0 0 18px}
+.sample-list{font:400 16px/26px "Open Sans",Arial,sans-serif;letter-spacing:1.12px;margin:0;padding:0 0 0 24px}
+.sample-list li{padding:0 0 0 4px;margin:0 0 20px}
+.sample-list li:last-child{margin-bottom:0}
+.sample-list strong{font-weight:700}
+.sample-list li::marker{color:var(--ink);font-size:1em;font-weight:400}
+.list-results{margin-top:48px}
+.list-numbered ol{list-style:none;padding:0}
+.list-numbered ol li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:16px;padding:0;margin-bottom:24px}
+.list-numbered .list-number{font:800 24px/31.2px "Open Sans",Arial,sans-serif;letter-spacing:1.8px}
+.list-numbered ul{padding-left:24px}
+.list-leads ol li{padding-bottom:20px;border-bottom:1px solid var(--rule)}
+.list-leads ol li:last-child{padding-bottom:0;border:0}
+.list-leads ol .list-copy>strong:first-child{display:block;margin-bottom:4px}
+.list-footnote{font-size:13px;line-height:23px;color:var(--quiet);margin:32px 0 0;max-width:900px}
+body[data-view=reading] .lists-grid{grid-template-columns:minmax(0,716px);justify-content:center;gap:64px}
+body[data-view=reading] .list-option{padding-bottom:48px;border-bottom:1px solid var(--rule)}
+@media(max-width:999px){.lists-grid{grid-template-columns:1fr;max-width:716px;margin:auto;gap:56px}.list-option{padding-bottom:40px;border-bottom:1px solid var(--rule)}.list-study>h2{font-size:22px;line-height:30px}}
+@media(max-width:767px){.sample-list{font-size:14px;line-height:26px}.list-numbered .list-number{font-size:22px;line-height:28px}}
+</style>
 </head>
 <body data-view="compare">
 <main>
 <header>
 <h1>Оформление статьи</h1>
-<p>Сейчас выбираем выделения внутри абзаца. Ниже сохранены варианты тезисов и цитат. Во всех примерах Open Sans.</p>
-<div class="links"><a href="#inline-emphasis">Выделения в тексте</a><a href="#block-inserts">Тезисы и цитаты</a><a href="https://ai.dengradel.com/top-5-cashback-business-zero-funding/">Cash4Brands · статья на сайте</a><a href="https://ai.dengradel.com/material-page-reference/">Стандартный образец статьи</a></div>
+<p>Сейчас выбираем списки и краткие выводы. Ниже сохранены выделения, тезисы и цитаты. Во всех примерах Open Sans.</p>
+<div class="links"><a href="#lists-and-takeaways">Списки и выводы</a><a href="#inline-emphasis">Выделения в тексте</a><a href="#block-inserts">Тезисы и цитаты</a><a href="https://ai.dengradel.com/top-5-cashback-business-zero-funding/">Cash4Brands · статья на сайте</a><a href="https://ai.dengradel.com/material-page-reference/">Стандартный образец статьи</a></div>
 <div class="controls" role="group" aria-label="Режим сравнения"><button type="button" data-view="compare" aria-pressed="true">Рядом</button><button type="button" data-view="reading" aria-pressed="false">Ширина статьи</button></div>
 </header>
+<!-- LIST-STUDY -->
+<section class="list-study" id="lists-and-takeaways" aria-labelledby="lists-title">
+<h2 id="lists-title">Списки и краткие выводы</h2>
+<p class="list-intro">В каждой колонке одинаковые три Lessons из Cash4Brands, ниже — один и тот же перечень результатов. Слова, порядок и жирные выделения сохранены. Эмодзи-номера и галочки заменены обычными номерами и маркерами списка.</p>
+<div class="lists-grid"><section class="list-option list-plain" aria-labelledby="list-option-1">
+<h3 id="list-option-1">1 · Обычный список</h3><p class="description">Спокойная нумерация. Жирная фраза продолжает строку.</p>
+<h4 class="list-source-label" lang="en">Lessons for Marketers &amp; Founders</h4>
+<ol class="sample-list" lang="en" role="list"><li><div class="list-copy"><strong>Marketing starts with product differentiation.</strong> If your product is identical to your competitors, no amount of advertising will save you.</div></li><li><div class="list-copy"><strong>Clear value propositions win.</strong> Users don’t want to “calculate” their benefits—they want to see them immediately.</div></li><li><div class="list-copy"><strong>Small product changes can create massive advantages.</strong> If your competitors are ignoring something, that’s your opportunity.</div></li></ol>
+<div class="list-results"><h4 class="list-source-label">Перечень результатов · без нумерации</h4>
+<ul class="sample-list" lang="en" role="list"><li><div class="list-copy">Users who received instant compensation <strong>stayed with us for years</strong>.</div></li><li><div class="list-copy">We became the <strong>highest-rated</strong> cashback service on review platforms.</div></li><li><div class="list-copy">New users discovered us organically through positive reviews.</div></li></ul></div>
+</section>
+<section class="list-option list-numbered" aria-labelledby="list-option-2">
+<h3 id="list-option-2">2 · Номер отдельно</h3><p class="description">Более заметный номер слева, текст в отдельной колонке.</p>
+<h4 class="list-source-label" lang="en">Lessons for Marketers &amp; Founders</h4>
+<ol class="sample-list" lang="en" role="list"><li><span class="list-number" aria-hidden="true">1</span><div class="list-copy"><strong>Marketing starts with product differentiation.</strong> If your product is identical to your competitors, no amount of advertising will save you.</div></li><li><span class="list-number" aria-hidden="true">2</span><div class="list-copy"><strong>Clear value propositions win.</strong> Users don’t want to “calculate” their benefits—they want to see them immediately.</div></li><li><span class="list-number" aria-hidden="true">3</span><div class="list-copy"><strong>Small product changes can create massive advantages.</strong> If your competitors are ignoring something, that’s your opportunity.</div></li></ol>
+<div class="list-results"><h4 class="list-source-label">Перечень результатов · без нумерации</h4>
+<ul class="sample-list" lang="en" role="list"><li><div class="list-copy">Users who received instant compensation <strong>stayed with us for years</strong>.</div></li><li><div class="list-copy">We became the <strong>highest-rated</strong> cashback service on review platforms.</div></li><li><div class="list-copy">New users discovered us organically through positive reviews.</div></li></ul></div>
+</section>
+<section class="list-option list-leads" aria-labelledby="list-option-3">
+<h3 id="list-option-3">3 · Первая фраза отдельно</h3><p class="description">Жирный лид с новой строки и тонкое разделение пунктов.</p>
+<h4 class="list-source-label" lang="en">Lessons for Marketers &amp; Founders</h4>
+<ol class="sample-list" lang="en" role="list"><li><div class="list-copy"><strong>Marketing starts with product differentiation.</strong> If your product is identical to your competitors, no amount of advertising will save you.</div></li><li><div class="list-copy"><strong>Clear value propositions win.</strong> Users don’t want to “calculate” their benefits—they want to see them immediately.</div></li><li><div class="list-copy"><strong>Small product changes can create massive advantages.</strong> If your competitors are ignoring something, that’s your opportunity.</div></li></ol>
+<div class="list-results"><h4 class="list-source-label">Перечень результатов · без нумерации</h4>
+<ul class="sample-list" lang="en" role="list"><li><div class="list-copy">Users who received instant compensation <strong>stayed with us for years</strong>.</div></li><li><div class="list-copy">We became the <strong>highest-rated</strong> cashback service on review platforms.</div></li><li><div class="list-copy">New users discovered us organically through positive reviews.</div></li></ul></div>
+</section></div>
+<p class="list-footnote">Это варианты оформления, выбор ещё открыт. Нумерация сохранена для Lessons, результаты показаны маркированным списком. Кнопка «Ширина статьи» даёт колонку 716 px. Подписи изображений рассматриваем отдельно после нового референса.</p>
+</section>
+<!-- /LIST-STUDY -->
 <!-- INLINE-STUDY -->
 <section class="inline-study" id="inline-emphasis" aria-labelledby="inline-title">
 <h2 id="inline-title">Выделения внутри абзаца</h2>

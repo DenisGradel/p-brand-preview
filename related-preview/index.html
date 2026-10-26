@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Related materials — article design study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --paper:#f1efe9; --ink:#282828; --panel:#dcd8ce; --accent:#d4c6e6; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"Open Sans",Arial,sans-serif; }
+    a { color:inherit; }
+    .study { max-width:1110px; margin:0 auto; padding:28px 20px 0; }
+    .study__eyebrow { margin:0 0 10px; font-size:11px; font-weight:800; letter-spacing:3px; text-transform:uppercase; }
+    .study__intro { max-width:716px; margin:0 0 58px; font-size:14px; line-height:1.6; }
+    .study__intro a { text-decoration-thickness:auto; text-underline-offset:auto; }
+    .frame { max-width:716px; margin:0 auto; padding-bottom:64px; }
+    .end-copy { margin:0 0 18px; font-size:16px; line-height:26px; letter-spacing:1.12px; }
+    .end-copy strong { font-weight:800; }
+    .end-tags { margin:0 0 56px; font-size:16px; line-height:26px; letter-spacing:1.12px; overflow-wrap:anywhere; }
+    .related { margin:0 0 54px; }
+    .related__heading { margin:0 0 42px; font-size:24px; font-weight:800; line-height:31px; letter-spacing:1.7px; }
+    .related__grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:42px 16px; list-style:none; padding:0; margin:0; }
+    .related-card { min-width:0; margin:0; }
+    .related-card__link { position:relative; display:block; min-width:0; padding:0 15px 14px; text-decoration:none; outline:none; }
+    .related-card__panel { min-height:149px; margin-left:47px; padding:25px 20px 26px 63px; background:var(--panel); transition:background-color .3s ease-in-out; }
+    .related-card__media { position:absolute; top:calc(50% - 45px); left:15px; display:block; width:90px; height:90px; overflow:hidden; background:#fff; }
+    .related-card__media img { width:100%; height:100%; object-fit:cover; object-position:center; display:block; }
+    .related-card__title { margin:0; overflow-wrap:anywhere; font-size:14px; font-weight:800; line-height:16px; letter-spacing:1.05px; }
+    .related-card__type { margin:2px 0 0; font-size:10px; font-weight:400; line-height:14px; letter-spacing:.75px; }
+    .related-card__detail { display:flex; gap:8px; justify-content:space-between; align-items:baseline; margin:15px 0 0; font-size:11px; line-height:16px; letter-spacing:.825px; }
+    .related-card__detail dt { flex:0 0 auto; text-transform:uppercase; }
+    .related-card__detail dd { min-width:0; margin:0; text-align:right; overflow-wrap:anywhere; }
+    .related-card__link:hover .related-card__panel,
+    .related-card__link:focus-visible .related-card__panel { background:var(--paper); }
+    .related-card__link:focus-visible .related-card__panel { outline:2px solid var(--ink); outline-offset:3px; }
+    .all-materials { display:inline-block; font-size:16px; line-height:26px; letter-spacing:1.12px; text-decoration:underline; }
+    .all-materials:hover { opacity:.8; }
+    .notes { max-width:716px; margin:0 auto 80px; padding:32px 0 0; border-top:1px solid rgba(40,40,40,.25); font-size:13px; line-height:1.65; }
+    .notes h2 { margin:0 0 14px; font-size:16px; font-weight:800; }
+    .notes p { margin:0 0 10px; }
+    @media(max-width:767px) {
+      .study { padding-top:20px; }
+      .study__intro { margin-bottom:42px; }
+      .frame { padding-bottom:64px; }
+      .end-copy,.end-tags,.all-materials { font-size:14px; line-height:24px; letter-spacing:.98px; }
+      .end-tags { margin-bottom:50px; }
+      .related__heading { margin-bottom:36px; font-size:22px; line-height:29px; }
+      .related__grid { grid-template-columns:minmax(0,1fr); gap:40px; }
+      .related-card__link { padding-inline:0; }
+      .related-card__media { left:0; }
+    }
+    @media(max-width:359px) {
+      .related-card__panel { padding-right:14px; }
+      .related-card__detail { display:block; }
+      .related-card__detail dd { text-align:left; }
+    }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .related-card__panel { transition:none; } }
+  </style>
+</head>
+<body id="top">
+  <div class="study">
+    <p class="study__eyebrow">Related materials / design study</p>
+    <p class="study__intro">A reviewable study for the bottom of <a href="https://ai.dengradel.com/top-5-cashback-business-zero-funding/">Cash4Brands</a>. The card shape and hover are based on <a href="https://www.cssdesignawards.com/woty/a-spacecraft-for-all/25176/">A Spacecraft for All</a>. The live article template is unchanged.</p>
+    <main class="frame">
+      <p class="end-copy"><strong>Small product changes can create massive advantages.</strong><br>If your competitors are ignoring something, that’s your opportunity.</p>
+      <p class="end-tags">#ProductMarketing #MarketingStrategy #GrowthHacking #CustomerRetention #BrandBuilding #StartupGrowth</p>
+      <section class="related" aria-labelledby="related-heading">
+        <h2 class="related__heading" id="related-heading">Related materials</h2>
+        <ul class="related__grid">
+          <li class="related-card">
+            <a class="related-card__link" href="https://ai.dengradel.com/marketing-strategy-and-structure-in-web3-for-2025/">
+              <span class="related-card__media"><img src="https://ai.dengradel.com/wp-content/uploads/2026/10/a002-cover.jpg" alt=""></span>
+              <div class="related-card__panel">
+                <h3 class="related-card__title">Marketing Strategy and Structure in web3 for 2025</h3>
+                <p class="related-card__type">Guide</p>
+                <dl class="related-card__detail"><dt>Topic</dt><dd>Go-to-Market</dd></dl>
+              </div>
+            </a>
+          </li>
+          <li class="related-card">
+            <a class="related-card__link" href="https://ai.dengradel.com/top-5-crypto-campaigns-that-went-viral-in-2024/">
+              <span class="related-card__media"><img src="https://ai.dengradel.com/wp-content/uploads/2026/10/a003-cover.png" alt=""></span>
+              <div class="related-card__panel">
+                <h3 class="related-card__title">TOP-5 Crypto Campaigns That Went Viral in 2024</h3>
+                <p class="related-card__type">Analysis</p>
+                <dl class="related-card__detail"><dt>Topic</dt><dd>Growth Marketing</dd></dl>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <a class="all-materials" href="https://ai.dengradel.com/website-gallery/">All materials</a>
+    </main>
+    <section class="notes" aria-label="Design decisions">
+      <h2>What this study tests</h2>
+      <p>The image, title and lightening background follow the CSSDA card. The full titles remain visible; card height grows when they wrap. The whole card is a link and keyboard focus uses the same visual change.</p>
+      <p>“Guide / Analysis” and “Topic” are proposed uses of existing article data in the space below the title. They have not been approved. No score, ranking or three invented UI/UX/INN rows are shown.</p>
+      <p>Cash4Brands has no visible Sources row today. The study shows the existing All materials link for context. Share buttons and footer are outside this card study and remain on the live article.</p>
+    </section>
+  </div>
+</body>
+</html>
